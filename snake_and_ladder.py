@@ -47,13 +47,11 @@ def makeMove():
     return num
     
 
-def player1Turn(name, place, i):
+def playerTurn(name, place, i):
     print("\n\n\nYour Turn :", name)
     nameLength = len(name)
     guessCorrect = False
     print("Current position : " + str(place) + "\n")
-    # print("Press Enter key to make your move :)")
-    # input()
 
     while(not guessCorrect):
         temp = random.randint(0, nameLength-1)
@@ -121,14 +119,14 @@ def play():
     while(notWin):
 
         if(i%2 == 0):
-            (player1place, i) = player1Turn(name1, player1place, i)
+            (player1place, i) = playerTurn(name1, player1place, i)
 
             if(player1place == 100):
                 print("Hurray... You (" + name1 + ") are the winner :) :>")
                 notWin = False;
 
         else:
-            (player2place, i) = player1Turn(name2, player2place, i)
+            (player2place, i) = playerTurn(name2, player2place, i)
 
             if(player2place == 100):
                 print("Hurray... You (" + name2 + ") are the winner :) :>")
