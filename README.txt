@@ -4,7 +4,7 @@ This game is written in PYTHON Language -> the language of snakes..... ha ha ha 
 
 There is no GUI, this runs only on a command line prompt...
 
-This game is only two playered game which runs only if the player enters correctly for the asked guess.
+This game is only "two playered game" which runs only if the player enters correctly for the asked guess.
 The guess question is basically on the player's name, like enter your 1st letter....., if you go wrong the question will be repeated till you answer it correctly.
 
 Therefore this is a game where you should guess and decide, whether to climb the ladders or get caught by the snakes.
